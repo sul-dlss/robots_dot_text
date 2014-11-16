@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sul-dlss/robots_dot_text.svg?branch=master)](https://travis-ci.org/sul-dlss/robots_dot_text)
+
 # RobotsDotText
 Supply rails-environment specific robots.txt files.
 
