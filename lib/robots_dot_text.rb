@@ -1,5 +1,5 @@
 require "robots_dot_text/engine"
-require "robots_dot_text/robots_controller"
+require "robots_dot_text/controller"
 
 module RobotsDotText
 end

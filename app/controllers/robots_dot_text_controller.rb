@@ -1,3 +1,3 @@
 class RobotsDotTextController < ActionController::Base
-  include RobotsController
+  include RobotsDotText::Controller
 end
