@@ -27,4 +27,15 @@ You can create a file for every rails environment using the naming convention ro
     robots.production.txt
     robots.development.txt
 
+## Further customization of robots.txt file names
+If you would like to customize the robots.txt file name to something other than the rails environment you can do so by overriding the `RobotsDotTextController#robots_file_descriptor` method in your app.
 
+    class RobotsDotTextController < ActionController::Base
+      include RobotsController
+      private
+      def robots_file_descriptor
+        request.env["SERVER_NAME"]
+      end
+    end
+
+The above would load `robots.localhost.txt` when running under `localhost:3000` or `robots.example.txt` when running under `example.com`.
